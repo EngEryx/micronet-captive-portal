@@ -1,8 +1,11 @@
 # profile_intel
 # WARNING: Written in 2015, requires updating. A newer repository will be provided.
 
+![Alt text](MicroNet-Visual-Diagram.PNG?raw=true "DIA diagram")
+
 # Very Useful Links,
 	-https://blog.sajjan.com.np/2017/04/07/deploying-a-wi-fi-hotspot-using-coovachilli-and-hostapd-in-ubuntu/
+	-https://blog.sajjan.com.np/2016/02/12/coovachilli-with-easyhotspot-and-radius/
 
 # Quick Description:
 	- A network customer/user management system whose goal is to integrate Artificial Intelligence and machine learning to build a single profile state internet users
