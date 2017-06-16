@@ -1,0 +1,45 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="5">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\views\postpaid.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="575" endPos="575" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\views\menu\dashboard.html" />
+            <File firstVisibleLine="87" xOffset="0" scrollWidth="273213" startPos="926" endPos="926" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\controllers\postpaid.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="116" endPos="116" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\models\postpaidmodel.php" />
+            <File firstVisibleLine="25" xOffset="0" scrollWidth="273213" startPos="1872" endPos="1872" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\index.html">
+                <Fold line="57" />
+                <Fold line="67" />
+                <Fold line="90" />
+                <Fold line="117" />
+                <Fold line="162" />
+                <Fold line="194" />
+            </File>
+            <File firstVisibleLine="122" xOffset="0" scrollWidth="273213" startPos="8860" endPos="8860" selMode="0" lang="Javascript" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\js\script.js">
+                <Fold line="45" />
+                <Fold line="98" />
+                <Fold line="124" />
+                <Fold line="133" />
+                <Fold line="138" />
+                <Fold line="149" />
+                <Fold line="172" />
+                <Fold line="204" />
+                <Fold line="207" />
+                <Fold line="268" />
+                <Fold line="271" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="631" endPos="631" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\views\voucher.html" />
+            <File firstVisibleLine="207" xOffset="0" scrollWidth="273213" startPos="7353" endPos="7353" selMode="0" lang="Javascript" encoding="-1" filename="C:\VertrigoServ\www\micronet\js\script.js">
+                <Fold line="245" />
+                <Fold line="281" />
+                <Fold line="334" />
+                <Fold line="378" />
+                <Fold line="431" />
+            </File>
+            <File firstVisibleLine="55" xOffset="0" scrollWidth="273213" startPos="3347" endPos="3347" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\controllers\voucher.php" />
+            <File firstVisibleLine="27" xOffset="0" scrollWidth="273213" startPos="1901" endPos="1901" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\models\vouchermodel.php" />
+            <File firstVisibleLine="260" xOffset="0" scrollWidth="273213" startPos="9032" endPos="9032" selMode="0" lang="Normal Text" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\js\hardbak.txt" />
+            <File firstVisibleLine="15" xOffset="0" scrollWidth="273213" startPos="1082" endPos="1082" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\views\home\home_view.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\css\style.css" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

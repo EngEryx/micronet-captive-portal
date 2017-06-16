@@ -1,0 +1,30 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Search Postpaid</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'searchpost', title:'Results Postpaid', href:'views/search/postpaid.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<!-- button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Search Voucher</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Search Invoice</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button -->

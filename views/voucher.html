@@ -1,0 +1,39 @@
+<div dojoType="dijit.layout.BorderContainer" id="voucherGridtab" design="header" gutters="true" liveSplitters="true">
+	<div dojoType="dijit.layout.ContentPane" id="fileGridButtonPane" region="top" splitters="false">
+	    <button dojoType="dijit.form.Button" onClick="listVoucher">Refresh List(s)</button>
+		<button dojoType="dijit.form.Button" onClick="searchVou">Search Voucher</button>
+		<button dojoType="dijit.form.Button" onClick="createVoucher">Generate New Vouchers</button>
+		<button dojoType="dijit.form.Button" onClick="editVoucher">Edit Voucher</button>
+		<button dojoType="dijit.form.Button" onClick="printVoucher">Print Voucher</button>
+		<button dojoType="dijit.form.Button" onClick="smsVoucher">Send(SMS) Voucher</button>
+		<button dojoType="dijit.form.Button" onClick="deleteVoucher">Delete Voucher</button>
+	</div>
+					<div dojoType="dijit.layout.ContentPane" region="center" splitter="true" id="voucherGridPane">
+						<span dojoType="dojo.data.ItemFileReadStore" jsId="voucherStore" url="micron/index.php/voucher"></span>
+						<table dojoType="dojox.grid.DataGrid" id="voucherGrid" jsId="voucherGrid" columnReordering="true" sortFields="['username','valid_until']" store="voucherStore" query="{username: '*'}"
+						clientSort="true" selectionMode="single" rowHeight="25" noDataMessage="<span class='dojoxGridNoData'>No Voucher found. Hit 'Refresh'</span>">
+							<thead>
+								<tr>
+									<th field="username" width="200px">User Name</th>
+									<th field="password" width="200px">Password</th>
+									<th field="billingplan" width="100%">Billing Plan</th>
+									<th field="valid_until" width="100%">Valid Until</th>
+									<th field="time_used" width="100%">Time Used</th>
+									<th field="time_remain" width="100%">Time Remain</th>
+									<th field="packet_used" width="100%">Packet Used</th>
+									<th field="packet_remain" width="100%">Packet Remain</th>
+									<th field="isprinted" width="100%">Printed</th>
+								</tr>
+							</thead>
+
+							<script type="dojo/method" event="onRowContextMenu" args="e">
+							
+							</script>
+						</table>
+						<div dojoType="dijit.Menu" id="gridMenu" targetNodeIds="voucherGrid">
+							<div dojoType="dijit.MenuItem" onClick="editVoucher">Edit Voucher</div>
+							<div dojoType="dijit.MenuItem" onClick="printVoucher">Print Voucher</div>
+							<div dojoType="dijit.MenuItem" onClick="deleteVoucher">Delete Voucher</div>
+						</div>
+					</div>
+</div>	

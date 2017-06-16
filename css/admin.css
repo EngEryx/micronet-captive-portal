@@ -1,0 +1,80 @@
+
+fieldset
+{ 
+	margin:1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+}
+.details fieldset, .userprofile fieldset
+{
+border: 1px solid #ccc;
+padding-top: 1em;
+margin-top: 0em;}
+
+legend
+{
+	font-weight:bold;
+}
+.userprofile label
+{
+	float: none;
+	display: block;
+}
+
+label 
+{
+float: left;
+width: 150px;
+}
+.nota
+{
+display: block;
+margin-left: 100px;
+font-size: 10px;}
+
+.error, li.error  {
+	color:#760000;
+	padding-left: 18px;
+	background: url(../../shared/images/error.png) no-repeat left top;
+}
+
+
+/* :KLUDGE: Explicitly set the width for IE6- */
+* html .error{
+  width: 10em;
+}
+
+/*FORM
+-----------------------------------------------------------------------------*/
+ul.from{
+	
+}
+
+ul.form li{
+	list-style: none;
+	
+}
+
+ul.form input{
+	color: #666666;
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 5px;
+	width: 150px;
+	border: 1px solid;
+}
+
+ul.form label{
+	color: #666666;
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 5px;
+	width: 150px;
+}
+
+li.submit label{
+	text-align: center;
+	display:block;
+	width: 100%;
+	margin-top: 5px;
+}

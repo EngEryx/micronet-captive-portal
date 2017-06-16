@@ -1,0 +1,15 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\index.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\views\postpaid.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="575" endPos="575" selMode="0" lang="HTML" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\views\menu\dashboard.html" />
+            <File firstVisibleLine="87" xOffset="0" scrollWidth="273213" startPos="926" endPos="926" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\controllers\postpaid.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="116" endPos="116" selMode="0" lang="PHP" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\micron\system\application\models\postpaidmodel.php" />
+            <File firstVisibleLine="59" xOffset="0" scrollWidth="273213" startPos="1960" endPos="1960" selMode="0" lang="Javascript" encoding="-1" filename="C:\VertrigoServ\www\samplerdojo\js\script.js" />
+            <File firstVisibleLine="16" xOffset="0" scrollWidth="273213" startPos="1125" endPos="1125" selMode="0" lang="Javascript" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\js\script.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="273213" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\VertrigoServ\www\sampledojo\css\style.css" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

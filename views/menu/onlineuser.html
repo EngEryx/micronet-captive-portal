@@ -1,0 +1,11 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Online Users</span>
+		 <script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'onlineuser', title:'Online Users', href:'views/onlineuser.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+		</script>	
+</button>
+

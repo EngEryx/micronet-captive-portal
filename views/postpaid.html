@@ -1,0 +1,39 @@
+<div dojoType="dijit.layout.BorderContainer" id="postpaidGridtab" design="header" gutters="true" liveSplitters="true">
+	<div dojoType="dijit.layout.ContentPane" id="postpaidGridButtonPane" region="top" splitters="false">
+	    <button dojoType="dijit.form.Button" onClick="refreshPost">Refresh All List(s)</button>
+		<button dojoType="dijit.form.Button" onClick="searchPost">Search Account</button>
+		<button dojoType="dijit.form.Button" onClick="createPostpaid">Add Postpaid Account</button>
+		<button dojoType="dijit.form.Button" onClick="viewPostpaid">View Usage Bill</button>
+		<button dojoType="dijit.form.Button" onClick="editPostpaid">Edit Account</button>
+		<button dojoType="dijit.form.Button" onClick="printPostpaid">Print / Send Invoice</button>
+		<button dojoType="dijit.form.Button" onClick="printPvoucher"> Print (Account details)</button>
+		<button dojoType="dijit.form.Button" onClick="remPostpaid">Delete Account</button>
+	</div>
+					<div dojoType="dijit.layout.ContentPane" region="center" height="100%" splitter="true" id="postpaidGridPane">
+						<span dojoType="dojo.data.ItemFileReadStore" jsId="postpaidStore" url="micron/index.php/postpaid"></span>
+						<table dojoType="dojox.grid.DataGrid" id="postpaidGrid" jsId="postpaidGrid" columnReordering="true" sortFields="['username','valid_until']" store="postpaidStore" query="{username: '*'}"
+						clientSort="true" selectionMode="single" rowHeight="25" noDataMessage="<span class='dojoxGridNoData'>No postpaid accounts found. Hit 'Refresh'</span>">
+							<thead>
+								<tr>
+									<th field="realname" width="100%">Real Name</th>
+									<th field="username" width="100%">User Name</th>
+									<th field="password" width="100%">Password</th>
+									<th field="used" width="100%">Time/Packets Used</th>
+									<th field="bill_by" width="100%">Bill By</th>
+									<th field="current_total" width="100%">Total Time/Packets</th>
+									<th field="valid_until" width="100%">Valid Until</th>
+									<th field="smsmobile" width="100%">Mobile</th>
+								</tr>
+							</thead>
+
+							<script type="dojo/method" event="onRowContextMenu" args="e">
+							
+							</script>
+						</table>
+						<div dojoType="dijit.Menu" id="postpaidMenu" targetNodeIds="postpaidGrid">
+							<div dojoType="dijit.MenuItem" onClick="editPostpaid">Edit postpaid</div>
+							<div dojoType="dijit.MenuItem" onClick="printPostpaid">Print postpaid</div>
+							<div dojoType="dijit.MenuItem" onClick="holla">Delete postpaid</div>
+						</div>
+					</div>
+</div>	

@@ -1,0 +1,174 @@
+@import "../../dojo/resources/dojo.css";
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0; 
+	overflow: hidden;
+	font: 10pt Arial,Myriad,Tahoma,Verdana,sans-serif;
+}
+
+#borderContainer {
+	width: 100%; height: 100%;
+}
+
+#topBar {
+	margin: 0; padding: 0; border: none;
+}
+
+h1 {
+	margin: 0; padding: 10px; background-color: #003267; color: #fff;
+}
+
+#mainSection {
+	margin: 0; padding: 0;
+	background-color: #eee;
+	margin-bottom: 4px;
+}
+#tabsPanel
+{
+ margin-bottom:4px;
+}
+#treeSection {
+	margin-top:4px;
+	margin-left: 4px;
+	width: 200px;
+	margin-bottom: 4px;
+}
+
+#mainContainer {
+	padding: 0;
+}
+
+#gridSection {
+	height: 100%;
+	padding: 0;
+}
+
+.dojoxGrid table {
+	margin: 0;
+	height:100%;
+}
+
+.dojoxGrid td {
+   	border-style:none !important;
+}
+
+.claro .dojoxGridHeader .dojoxGridCellFocus {
+   	border: 1px solid #BCBCBC !important;
+}
+
+.claro .dojoxGridCellFocus {
+   	border: none !important;
+}
+
+.listingarea .dojoxGridCellFocus .dojoxGridCellOver {
+   	border:none !important;
+}
+
+.listingarea .dojoxGridRowOver{
+   	border-bottom-color: transparent !important;
+  	border-top-color: transparent !important;
+}
+
+.listingarea .dojoxGridRowOver .dojoxGridCell {
+   	background-color: inherit;
+   	color:inherit;
+}
+
+span.dojoxGridNoData {
+	color: red;
+}
+
+h2 {
+	font-size: 2.2em;
+	margin: 0; padding: 0;
+}
+
+#contactView {
+
+}
+
+#contactDetail th {
+	text-align: left;
+	color: #888;
+}
+
+:focus { outline: none; }
+
+.paneAccordion {
+	margin: 0 auto 0 auto !important;
+	text-align: center;
+}
+.commandButton .dijitButtonNode {
+	width: 150px;
+	margin-bottom: 7px;
+}
+.info {
+	text-align: left;
+	margin: 1em;
+	padding: 1em;
+	background-color: #E9F4FE;
+	border: 1px solid #759DC0;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+#voucherGrid {
+	height:400px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#postpaidGrid {
+	height:400px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#postpaidGridPanesh{
+	height:300px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#billingplanGrid {
+	height:400px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#onlineGrid {
+	height:300%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#invoiceGrid {
+	height:300px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+#mpesaGrid {
+	height:400px;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+#preLoader {
+	width:100%; 
+	height:100%;
+	margin:0; 
+	padding:0;
+	position:absolute; 
+	top:0; left:0;
+	background:#404040 url('../../dojox/image/resources/images/loading.gif') no-repeat center center;
+	z-index:999;
+}
+#preLoader p {
+	margin-left:450px;
+	margin-top:306px;
+	color:#ededed;
+	font:30pt Arial,san-serif;
+	font-weight:normal
+	
+}

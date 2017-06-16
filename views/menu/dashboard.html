@@ -1,0 +1,53 @@
+<!--button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Server Dashboard</span>
+  <script type="dojo/method" data-dojo-event="onClick">
+ // var newtab = new dijit.layout.ContentPane({ title:'New Tab!', href:'', closable:true });
+ // dijit.byId('tabsPanel').addChild(newtab);
+ // dijit.byId('tabsPanel').selectChild(newtab);
+  </script>
+</button -->
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Postpaid Accounts</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var postpaid = new dijit.layout.ContentPane({id:'postpaid', title:'PostPaid', href:'views/postpaid.html', closable:true});
+			//if(typeof postpaid == "undefined"){
+			dijit.byId('tabsPanel').addChild(postpaid);
+			dijit.byId('tabsPanel').selectChild(postpaid);
+			//}else{
+			dijit.byId('tabsPanel').selectChild(postpaid);
+			//}
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" jsId="vouchers" class="commandButton">
+  <span>Vouchers</span>
+   <script type="dojo/method" data-dojo-event="onClick">
+			 var newtabs = new dijit.layout.ContentPane({ id:'voucher', title:'Voucher(s)', href:'views/voucher.html', closable:true });
+			 //if(typeof newtabs == "undefined"){
+			 dijit.byId('tabsPanel').addChild(newtabs);
+			  dijit.byId('tabsPanel').selectChild(newtabs);
+				//}else{
+				 dijit.byId('tabsPanel').selectChild(newtabs);
+				//}
+  </script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Statistics</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Online Users</span>
+		 <script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'onlineuser', title:'Online Users', href:'views/onlineuser.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+		</script>	
+</button>
+

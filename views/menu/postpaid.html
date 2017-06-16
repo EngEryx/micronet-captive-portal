@@ -1,0 +1,13 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Postpaid Accounts</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			
+			var postpaid = new dijit.layout.ContentPane({id:'postpaid', title:'PostPaid', href:'views/postpaid.html', closable:true});
+			//if(typeof postpaid == "undefined"){
+			dijit.byId('tabsPanel').addChild(postpaid);
+			dijit.byId('tabsPanel').selectChild(postpaid);
+			//}else{
+			dijit.byId('tabsPanel').selectChild(postpaid);
+			//}
+	</script>
+</button>

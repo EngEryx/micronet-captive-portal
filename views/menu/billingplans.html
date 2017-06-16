@@ -1,0 +1,20 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Billing Plans</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var bplan = new dijit.layout.ContentPane({id:'billingplans', title:'Billing Plans', href:'views/billingplan.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(bplan);
+			//}
+			dijit.byId('tabsPanel').selectChild(bplan);
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Setup Postpaid Billing</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'postplan', title:'Postplan Setting', href:'micron/index.php/admin/postplan.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>

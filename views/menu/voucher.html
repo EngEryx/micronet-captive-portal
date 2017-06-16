@@ -1,0 +1,12 @@
+<button type="button" dojoType="dijit.form.Button" jsId="vouchers" class="commandButton">
+  <span>Vouchers</span>
+   <script type="dojo/method" data-dojo-event="onClick">
+			 var newtabs = new dijit.layout.ContentPane({ id:'voucher', title:'Voucher(s)', href:'views/voucher.html', closable:true });
+			 //if(typeof newtabs == "undefined"){
+			 dijit.byId('tabsPanel').addChild(newtabs);
+			  dijit.byId('tabsPanel').selectChild(newtabs);
+				//}else{
+				 dijit.byId('tabsPanel').selectChild(newtabs);
+				//}
+  </script>
+</button>

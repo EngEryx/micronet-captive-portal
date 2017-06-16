@@ -1,0 +1,38 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>System Information</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'systeminfo', title:'System Information', href:'micron/index.php/admin',closable:true});
+			dijit.byId('tabsPanel').addChild(stats);
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Chillispot Configuration</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'chillispot', title:'Configure Hardware', href:'micron/index.php/admin/chillispot',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<!--button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Cashier Management</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Admins Management</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button-->

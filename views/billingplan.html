@@ -1,0 +1,35 @@
+<div dojoType="dijit.layout.BorderContainer" id="billingplanGridtab" design="header" gutters="true" liveSplitters="true">
+	<div dojoType="dijit.layout.ContentPane" id="billingplanGridButtonPane" region="top" splitters="false">
+	    <button dojoType="dijit.form.Button" onClick="refreshPlan">Refresh List(s)</button>
+		<button dojoType="dijit.form.Button" onClick="createPlan">Add Billing Plan</button>
+		<button dojoType="dijit.form.Button" onClick="editPlan">Edit Billing Plan</button>
+		<button dojoType="dijit.form.Button" onClick="deletePlan">Delete Plan</button>
+	</div>
+					<div dojoType="dijit.layout.ContentPane" region="center" height="100%" splitter="true" id="billingplanGridPane">
+						<span dojoType="dojo.data.ItemFileReadStore" jsId="billingplanStore" url="micron/index.php/admin/billingplan"></span>
+						<table dojoType="dojox.grid.DataGrid" id="billingplanGrid" jsId="billingplanGrid" columnReordering="true" sortFields="['name','type']" store="billingplanStore" query="{name: '*'}"
+						clientSort="true" selectionMode="single" rowHeight="25" noDataMessage="<span class='dojoxGridNoData'>No Billing Plans found. Hit 'Refresh'</span>">
+							<thead>
+								<tr>
+									<th field="id" width="100%">Ref ID.</th>
+									<th field="name" width="100%">Acronym</th>
+									<th field="type" width="100%">Billing Type</th>
+									<th field="amount" width="100%">Amount</th>
+									<th field="valid_for" width="100%">Validity</th>
+									<th field="created_by" width="100%">Created By</th>
+									<th field="price" width="100%">Price</th>
+									<th field="bw_upload" width="100%">Upload Bandwidth</th>
+									<th field="bw_download" width="100%">Download Bandwidth</th>
+									<th field="idletimeout" width="100%">Idle Timeout</th>
+								</tr>
+							</thead>
+
+							<script type="dojo/method" event="onRowContextMenu" args="e">
+							
+							</script>
+						</table>
+						<div dojoType="dijit.Menu" id="billingplanMenu" targetNodeIds="billingplanGrid">
+							<div dojoType="dijit.MenuItem" onClick="deletePlan">Delete Billing Plan</div>
+						</div>
+					</div>
+</div>	

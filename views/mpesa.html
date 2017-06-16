@@ -1,0 +1,37 @@
+<div dojoType="dijit.layout.BorderContainer" id="mpesaGridtab" design="header" gutters="true" liveSplitters="true">
+	<div dojoType="dijit.layout.ContentPane" id="filekGridButtonPane" region="top" splitters="false">
+	    <button dojoType="dijit.form.Button" onClick="listMpesa">Refresh Accountts List(s)</button>
+		<button dojoType="dijit.form.Button" onClick="ssearchMpesa">Search MPESA Account</button>
+		<button dojoType="dijit.form.Button" onClick="deleteMpesa">Delete MPESA Account</button>
+	</div>
+					<div dojoType="dijit.layout.ContentPane" region="center" splitter="true" id="mpesasGridPane">
+						<span dojoType="dojo.data.ItemFileReadStore" jsId="mpesaStore" url="micron/index.php/mpesa/clients"></span>
+						<table dojoType="dojox.grid.DataGrid" id="mpesaGrid" jsId="mpesaGrid" columnReordering="true" sortFields="['client_username','id']" store="mpesaStore" query="{id: '*'}"
+						clientSort="true" selectionMode="single" rowHeight="25" noDataMessage="<span class='dojoxGridNoData'>No MPESA account found. Hit 'Refresh'</span>">
+							<thead>
+								<tr>
+									<th field="client_name" width="100%">Full Name</th>
+									<th field="client_username" width="60%">User Name</th>
+									<th field="client_password" width="60%">Password</th>
+									<th field="client_phone" width="100%">Mobile</th>
+									<th field="client_receipt" width="100%">Receipt</th>
+									<th field="client_cash" width="100%">Cash Paid</th>
+									<th field="client_plan" width="100%">Billing Plan</th>
+									<th field="client_expiry" width="60%">Valid For</th>
+									
+									<th field="client_merchant" width="100%">Merchant</th>
+									<th field="client_gateway" width="100%">Gateway</th>
+									<th field="client_replied" width="50%">SMS Notified</th>
+								</tr>
+							</thead>
+
+							<script type="dojo/method" event="onRowContextMenu" args="e">
+							
+							</script>
+						</table>
+						<div dojoType="dijit.Menu" id="mgridMenu" targetNodeIds="mpesaGrid">
+							<div dojoType="dijit.MenuItem" onClick="listMpesa">Refresh List</div>
+							<div dojoType="dijit.MenuItem" onClick="deleteMpesa">Delete Voucher</div>
+						</div>
+					</div>
+</div>	

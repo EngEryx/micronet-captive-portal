@@ -1,0 +1,20 @@
+<button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>All Invoices</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'invoicetab', title:'Invoices List', href:'views/invoice.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button>
+<!--button type="button" dojoType="dijit.form.Button" class="commandButton">
+  <span>Setup Postpaid Billing</span>
+	<script type="dojo/method" data-dojo-event="onClick">
+			var stats = new dijit.layout.ContentPane({id:'statistics', title:'Statistics', href:'micron/index.php/statistic.html',closable:true});
+			//if(typeof stats== "undefined"){
+			dijit.byId('tabsPanel').addChild(stats);
+			//}
+			dijit.byId('tabsPanel').selectChild(stats);
+	</script>
+</button-->

@@ -1,0 +1,29 @@
+<div dojoType="dijit.layout.BorderContainer" id="onlineGridtab" design="header" gutters="true" liveSplitters="true">
+	<div dojoType="dijit.layout.ContentPane" id="onlineGridButtonPane" region="top" splitters="false">
+	    <button dojoType="dijit.form.Button" onClick="listOnline">Refresh List(s)</button>
+		<button dojoType="dijit.form.Button" onClick="disconnectUser">Disconnect User</button>
+		<button dojoType="dijit.form.Button" onClick="smsOnline">Send(SMS) Voucher</button>
+	</div>
+					<div dojoType="dijit.layout.ContentPane" region="center" splitter="true" id="onlineGridPane">
+						<span dojoType="dojo.data.ItemFileReadStore" jsId="onlineStore" url="micron/index.php/onlineuser"></span>
+						<table dojoType="dojox.grid.DataGrid" id="onlineGrid" jsId="onlineGrid" columnReordering="true" sortFields="['username','packet']" store="onlineStore" query="{username: '*'}"
+						clientSort="true" selectionMode="single" rowHeight="25" noDataMessage="<span class='dojoxGridNoData'>No online users found. Hit 'Refresh'</span>">
+							<thead>
+								<tr>
+									<th field="username" width="200px">User Name</th>
+									<th field="start" width="200px">Start Time</th>
+									<th field="time" width="100%">Time Used</th>
+									<th field="packet" width="100%">Packets Used</th>
+								</tr>
+							</thead>
+
+							<script type="dojo/method" event="onRowContextMenu" args="e">
+							
+							</script>
+						</table>
+						<div dojoType="dijit.Menu" id="onlineMenu" targetNodeIds="onlineGrid">
+							<div dojoType="dijit.MenuItem" onClick="editVoucher">View User</div>
+							<div dojoType="dijit.MenuItem" onClick="disconnectUser">Disconnect User</div>
+						</div>
+					</div>
+</div>	
