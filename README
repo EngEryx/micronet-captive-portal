@@ -1,7 +1,7 @@
 # profile_intel
 # WARNING: Written in 2015, requires updating. A newer repository will be provided.
 
-![Alt text](MicroNet-Visual-Diagram.PNG?raw=true "DIA diagram")
+![Screenshot](MicroNet-Visual-Diagram.PNG) ("DIA diagram")
 
 # Very Useful Links,
 	-https://blog.sajjan.com.np/2017/04/07/deploying-a-wi-fi-hotspot-using-coovachilli-and-hostapd-in-ubuntu/
@@ -29,6 +29,7 @@
       RAM: 512MB Linux, 2GB Windows.
       OS: Windows 7, 8, 10, Server 2008 or Linux (Ubuntu Server 10/14).
       NIC: 2 – Network Interface Cards OR Virtual Box Adapters Emulation can be applied (Not recommended though).
+      
       MicroNet is a useful tool to:
       – Coffee Shops / Conference Centers / Internet Café.
       – Universities and other education premises.
