@@ -1,4 +1,4 @@
-# profile_intel
+## MicroNet
 # WARNING: Written in 2015, requires updating. A newer repository will be provided.
 
 ![Screenshot](MicroNet-Visual-Diagram.PNG) ("DIA diagram")
